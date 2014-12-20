@@ -2,6 +2,9 @@
   "name": "markdown-it-testgen",
   "version": "0.1.0",
   "description": "markdown-it tests generator",
+  "keywords": [
+    "markdown-it"
+  ],
   "homepage": "https://github.com/markdown-it/markdown-it-testgen",
   "repository": {
     "type": "git",

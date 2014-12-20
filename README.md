@@ -61,3 +61,9 @@ If header missed - line number will be used instead.
 ### module.exports.load(path, options, iterator)
 
 For each loaded file - parse and pass data to iterator functions. Currently used for tests only.
+
+
+## License
+
+[MIT](https://github.com/markdown-it/markdown-it-testgen/blob/master/LICENSE)
+
