@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/vitaly/.nvm/v0.10.33/bin/node',
+1 verbose cli   '/home/vitaly/.nvm/v0.10.33/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/home/vitaly/Кодинг/markdown-it/node_modules/markdown-it-testgen',
+5 verbose install   [ 'lodash',
+5 verbose install     'js-yaml',
+5 verbose install     'eslint',
+5 verbose install     'eslint-plugin-nodeca',
+5 verbose install     'istambul',
+5 verbose install     'mocha' ] ]
+6 info preinstall markdown-it-testgen@0.1.0
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping lodash@~ 2.4.1 /home/vitaly/Кодинг/markdown-it/node_modules/markdown-it-testgen
+9 verbose already installed skipping js-yaml@~ 3.2.4 /home/vitaly/Кодинг/markdown-it/node_modules/markdown-it-testgen
+10 verbose already installed skipping eslint@0.10.2 /home/vitaly/Кодинг/markdown-it/node_modules/markdown-it-testgen
+11 verbose already installed skipping eslint-plugin-nodeca@^1.0.0 /home/vitaly/Кодинг/markdown-it/node_modules/markdown-it-testgen
+12 verbose cache add [ 'istambul@*', null ]
+13 verbose cache add name=undefined spec="istambul@*" args=["istambul@*",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'istambul@*',
+14 verbose parsed url   path: 'istambul@*',
+14 verbose parsed url   href: 'istambul@*' }
+15 verbose already installed skipping mocha@* /home/vitaly/Кодинг/markdown-it/node_modules/markdown-it-testgen
+16 verbose cache add name="istambul" spec="*" args=["istambul","*"]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: '*',
+17 verbose parsed url   path: '*',
+17 verbose parsed url   href: '*' }
+18 verbose addNamed [ 'istambul', '*' ]
+19 verbose addNamed [ null, '*' ]
+20 silly lockFile f7583cc7-istambul istambul@*
+21 verbose lock istambul@* /home/vitaly/.npm/f7583cc7-istambul.lock
+22 silly addNameRange { name: 'istambul', range: '*', hasData: false }
+23 verbose request where is /istambul
+24 verbose request registry https://registry.npmjs.org/
+25 verbose request id 43af7427ad924b9b
+26 verbose url raw /istambul
+27 verbose url resolving [ 'https://registry.npmjs.org/', './istambul' ]
+28 verbose url resolved https://registry.npmjs.org/istambul
+29 verbose request where is https://registry.npmjs.org/istambul
+30 info trying registry request attempt 1 at 21:13:58
+31 http GET https://registry.npmjs.org/istambul
+32 http 404 https://registry.npmjs.org/istambul
+33 verbose headers { date: 'Sat, 20 Dec 2014 18:13:59 GMT',
+33 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+33 verbose headers   'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=0',
+33 verbose headers   'content-length': '52',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   age: '0',
+33 verbose headers   'x-served-by': 'cache-fra1250-FRA',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1419099238.997442,VS0,VE106',
+33 verbose headers   'keep-alive': 'timeout=10, max=50',
+33 verbose headers   connection: 'Keep-Alive' }
+34 silly registry.get cb [ 404,
+34 silly registry.get   { date: 'Sat, 20 Dec 2014 18:13:59 GMT',
+34 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+34 silly registry.get     'content-type': 'application/json',
+34 silly registry.get     'cache-control': 'max-age=0',
+34 silly registry.get     'content-length': '52',
+34 silly registry.get     'accept-ranges': 'bytes',
+34 silly registry.get     via: '1.1 varnish',
+34 silly registry.get     age: '0',
+34 silly registry.get     'x-served-by': 'cache-fra1250-FRA',
+34 silly registry.get     'x-cache': 'MISS',
+34 silly registry.get     'x-cache-hits': '0',
+34 silly registry.get     'x-timer': 'S1419099238.997442,VS0,VE106',
+34 silly registry.get     'keep-alive': 'timeout=10, max=50',
+34 silly registry.get     connection: 'Keep-Alive' } ]
+35 silly lockFile f7583cc7-istambul istambul@*
+36 silly lockFile f7583cc7-istambul istambul@*
+37 error 404 404 Not Found: istambul
+37 error 404
+37 error 404 'istambul' is not in the npm registry.
+37 error 404 You should bug the author to publish it
+37 error 404 It was specified as a dependency of 'markdown-it-testgen'
+37 error 404
+37 error 404 Note that you can also install from a
+37 error 404 tarball, folder, or http url, or git url.
+38 error System Linux 3.13.0-43-generic
+39 error command "/home/vitaly/.nvm/v0.10.33/bin/node" "/home/vitaly/.nvm/v0.10.33/bin/npm" "install"
+40 error cwd /home/vitaly/Кодинг/markdown-it/node_modules/markdown-it-testgen
+41 error node -v v0.10.33
+42 error npm -v 1.4.28
+43 error code E404
+44 verbose exit [ 1, true ]

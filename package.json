@@ -1,0 +1,31 @@
+{
+  "name": "markdown-it-testgen",
+  "version": "0.1.0",
+  "description": "markdown-it tests generator",
+  "homepage": "https://github.com/markdown-it/markdown-it-testgen",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/markdown-it/markdown-it-testgen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markdown-it/markdown-it-testgen/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "lodash": "~ 2.4.1",
+    "js-yaml": "~ 3.2.4"
+  },
+  "devDependencies": {
+    "eslint": "0.10.2",
+    "eslint-plugin-nodeca": "^1.0.0",
+    "istanbul": "*",
+    "mocha": "*"
+  }
+}
