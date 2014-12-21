@@ -54,7 +54,7 @@ If header missed - line number will be used instead.
 
 - __path__ - file or directory name
 - __options__ (not mandatory)
-  - __heade__r - Default `false`. Set `true` to use heaters for test names
+  - __header__ - Default `false`. Set `true` to use heaters for test names
   - __sep__ - array of allowed separators for samples, [ '.' ] by default
 - __md__ - `markdown-it` instance to parse and compare samples
 
