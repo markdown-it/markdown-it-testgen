@@ -4,8 +4,8 @@
 [![NPM version](https://img.shields.io/npm/v/markdown-it-testgen.svg?style=flat)](https://www.npmjs.org/package/markdown-it-testgen)
 
 
-This package parses fixtures in commonmark spec format and generates tests for `markdown-it`
-parser and plugins.
+> This package parses fixtures in commonmark spec format and generates tests for
+[markdown-it](https://github.com/markdown-it/markdown-it) parser and plugins.
 
 
 ```bash
