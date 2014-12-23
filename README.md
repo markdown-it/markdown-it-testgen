@@ -5,7 +5,8 @@
 
 
 > This package parses fixtures in commonmark spec format and generates tests for
-[markdown-it](https://github.com/markdown-it/markdown-it) parser and plugins.
+[markdown-it](https://github.com/markdown-it/markdown-it) parser and
+[plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
 
 
 ```bash
