@@ -1,3 +1,10 @@
+0.1.3 / 2015-01-12
+------------------
+
+- Added option to pass custom assertion object.
+- Use `chai` assertions by default.
+
+
 0.1.2 / 2014-12-24
 ------------------
 

@@ -23,10 +23,11 @@
   },
   "dependencies": {
     "lodash": "~ 2.4.1",
+    "chai": "~ 1.10.0",
     "js-yaml": "~ 3.2.4"
   },
   "devDependencies": {
-    "eslint": "0.10.2",
+    "eslint": "0.11.0",
     "eslint-plugin-nodeca": "^1.0.0",
     "istanbul": "*",
     "mocha": "*"

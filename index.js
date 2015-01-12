@@ -2,7 +2,6 @@
 
 var fs      = require('fs');
 var p       = require('path');
-var assert  = require('assert');
 
 var _       = require('lodash');
 var yaml    = require('js-yaml');
@@ -174,6 +173,10 @@ function generate(path, options, md) {
     md = options;
     options = {};
   }
+
+  options = _.assign({}, options);
+  options.assert = options.assert || require('chai').assert;
+
   load(path, options, function (data) {
     data.meta = data.meta || {};
 
@@ -182,7 +185,7 @@ function generate(path, options, md) {
     (data.meta.skip ? describe.skip : describe)(desc, function () {
       data.fixtures.forEach(function (fixture) {
         it(fixture.header && options.header ? fixture.header : 'line ' + (fixture.first.range[0] - 1), function () {
-          assert.strictEqual(md.render(fixture.first.text), fixture.second.text);
+          options.assert.strictEqual(fixture.second.text, md.render(fixture.first.text));
         });
       });
     });

@@ -57,6 +57,7 @@ If header missed - line number will be used instead.
 - __options__ (not mandatory)
   - __header__ - Default `false`. Set `true` to use heaters for test names
   - __sep__ - array of allowed separators for samples, [ '.' ] by default
+  - __assert__ - custom assertion package, `require('chai').assert` by default.
 - __md__ - `markdown-it` instance to parse and compare samples
 
 ### module.exports.load(path, options, iterator)
