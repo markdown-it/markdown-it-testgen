@@ -3,8 +3,15 @@
 var fs      = require('fs');
 var p       = require('path');
 
-var _       = require('lodash');
+var assign  = require('object-assign');
 var yaml    = require('js-yaml');
+
+
+function _class(obj) { return Object.prototype.toString.call(obj); }
+
+function isString(obj)   { return _class(obj) === '[object String]'; }
+function isFunction(obj) { return _class(obj) === '[object Function]'; }
+function isArray(obj)    { return _class(obj) === '[object Array]'; }
 
 
 function fixLF (str) {
@@ -118,12 +125,12 @@ function load(path, options, iterator) {
   var input, parsed,
       stat = fs.statSync(path);
 
-  if (_.isFunction(options)) {
+  if (isFunction(options)) {
     iterator = options;
     options = { sep: [ '.' ] };
-  } else if (_.isString(options)) {
+  } else if (isString(options)) {
     options = { sep: options.split('') };
-  } else if (_.isArray(options)) {
+  } else if (isArray(options)) {
     options = { sep: options };
   }
 
@@ -174,7 +181,7 @@ function generate(path, options, md) {
     options = {};
   }
 
-  options = _.assign({}, options);
+  options = assign({}, options);
   options.assert = options.assert || require('chai').assert;
 
   load(path, options, function (data) {
