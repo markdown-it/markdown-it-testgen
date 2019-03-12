@@ -1,3 +1,13 @@
+0.1.5 / 2019-03-12
+------------------
+
+- Maintenance release.
+- Drop lodash use.
+- Pin dev deps.
+- Add latest node to travis.
+- Cleanup `package.json`.
+
+
 0.1.4 / 2015-01-12
 ------------------
 
