@@ -1,3 +1,4 @@
+/* global it, describe */
 'use strict';
 
 var fs      = require('fs');
@@ -14,7 +15,7 @@ function isFunction(obj) { return _class(obj) === '[object Function]'; }
 function isArray(obj)    { return _class(obj) === '[object Array]'; }
 
 
-function fixLF (str) {
+function fixLF(str) {
   return str.length ? str + '\n' : str;
 }
 
